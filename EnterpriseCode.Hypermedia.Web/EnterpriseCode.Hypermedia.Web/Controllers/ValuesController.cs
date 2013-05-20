@@ -20,10 +20,11 @@ namespace EnterpriseCode.Hypermedia.Web.Controllers
             var model = new SampleViewModel();
             model.Address = "700 Dougals Ave.";
             model.Id = 1;
+
             var linksCollection = new List<IHypermediaLink>();
             model.Links = linksCollection;
-            model.Links.Add(new HypermediaLink { Rel = "self", Href = "http://this.com/sampleViewModel" });
-            model.Links.Add(new HypermediaLink { Rel = "new", Href = "http://this.com/sampleViewModel/new" });
+            model.Links.Add(new HypermediaLink { Rel = "self", Href = "http://this.com/sampleViewModel", Method = "GET", Title = "Value 1" });
+            model.Links.Add(new HypermediaLink { Rel = "new", Href = "http://this.com/sampleViewModel/new", Method = "POST", Title = "New Value" });
             response = Request.CreateResponse(HttpStatusCode.OK, model);
 
             return response;

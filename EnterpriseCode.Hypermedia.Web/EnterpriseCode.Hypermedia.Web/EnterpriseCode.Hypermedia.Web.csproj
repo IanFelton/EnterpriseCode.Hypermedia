@@ -171,6 +171,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
+    <Content Include="Content\api.jsonary.css" />
+    <Content Include="Content\basic.jsonary.css" />
+    <Content Include="Content\common.css" />
+    <Content Include="Content\images\background-fade-bold.png" />
+    <Content Include="Content\images\background-fade.png" />
+    <Content Include="Content\images\background-stripe.png" />
+    <Content Include="Content\loading.gif" />
+    <Content Include="Content\page.index.css" />
+    <Content Include="Content\plain.jsonary.css" />
+    <Content Include="Content\schemas.jsonary.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -239,6 +249,8 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
+    <Content Include="Scripts\api.jsonary.js" />
+    <Content Include="Scripts\basic.jsonary.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -250,9 +262,20 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\jsonary.hash.js" />
+    <Content Include="Scripts\jsonary.js" />
+    <Content Include="Scripts\jsonary.jstl.js" />
+    <Content Include="Scripts\jsonary.render.js" />
+    <Content Include="Scripts\jsonary.render.table.js" />
+    <Content Include="Scripts\jsonary.undo.js" />
     <Content Include="Scripts\knockout-2.2.0.debug.js" />
     <Content Include="Scripts\knockout-2.2.0.js" />
+    <Content Include="Scripts\list-links.js" />
+    <Content Include="Scripts\list-schemas.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\page.index.js" />
+    <Content Include="Scripts\plain.jsonary.js" />
+    <Content Include="Scripts\schemas.jsonary.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

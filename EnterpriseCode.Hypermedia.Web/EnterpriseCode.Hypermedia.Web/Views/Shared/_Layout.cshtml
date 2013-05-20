@@ -6,13 +6,17 @@
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" href="/content/page.index.css" />
+    <link rel="stylesheet" href="/content/basic.jsonary.css" />
+    <link rel="stylesheet" href="/content/common.css" />
 </head>
 <body>
     <header>
         <div class="content-wrapper">
             <div class="float-left">
                 <p class="site-title">
-                    <a href="~/">ASP.NET Web API</a></p>
+                    <a href="~/">ASP.NET Web API</a>
+                </p>
             </div>
             <div class="float-right">
                 <nav>
@@ -24,9 +28,36 @@
             </div>
         </div>
     </header>
-    @RenderBody()
+    <table>
+        <tr>
+            <td>
+                <input id="url-bar" />
+            </td>
+            <td>
+                <input id="go" type="submit" value="Go" />
+            </td>
+        </tr>
+    </table>
+    <div id="main">
 
+        @RenderBody()
+    </div>
     @Scripts.Render("~/bundles/jquery")
+    <script src="/scripts/jsonary.js"></script>
+    <script src="/scripts/jsonary.undo.js"></script>
+    <script src="/scripts/basic.jsonary.js"></script>
+    <script src="/scripts/list-schemas.js"></script>
+    <script src="/scripts/list-links.js"></script>
+    <script src="/scripts/page.index.js"></script>
     @RenderSection("scripts", required: false)
+    <script>
+        if (window.location.hash == "#" || window.location.hash == "") {
+            window.location.replace("#" + $('#url-bar').val());
+        } else {
+            var url = window.location.hash.substring(1);
+            $('#url-bar').val(url);
+        }
+        $('#go').click();
+    </script>
 </body>
 </html>
